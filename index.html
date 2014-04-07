@@ -3,10 +3,10 @@
   <head>
     <title>Ejemplo de Acceleration</title>
 
-    <script type="text/javascript" charset="utf-8" src="phonegap-1.0.0.js"></script>
+    <script type="text/javascript" charset="utf-8" src="phonegap-1.4.1.js"></script>
     <script type="text/javascript" charset="utf-8">
 
-    // El identificador del visor de aceleración a detener
+    // El identificador del visor de aceleraciï¿½n a detener
     var watchID = null;
 
     // Espera a que PhoneGap se inicie
@@ -19,7 +19,7 @@
         startWatch();
     }
 
-    // Empieza a observar la aceleración
+    // Empieza a observar la aceleraciï¿½n
     //
     function startWatch() {
 
@@ -29,7 +29,7 @@
         watchID = navigator.accelerometer.watchAcceleration(onSuccess, onError, options);
     }
 
-    // Deja de observar la aceleración
+    // Deja de observar la aceleraciï¿½n
     //
     function stopWatch() {
         if (watchID) {
@@ -38,17 +38,17 @@
         }
     }
 
-    // onSuccess: Obtiene el resultado de la aceleración actual
+    // onSuccess: Obtiene el resultado de la aceleraciï¿½n actual
     //
     function onSuccess(acceleration) {
         var element = document.getElementById('accelerometer');
-        element.innerHTML = 'Aceleración X: ' + acceleration.x + '<br />' +
-                            'Aceleración Y: ' + acceleration.y + '<br />' +
-                            'Aceleración Z: ' + acceleration.z + '<br />' + 
+        element.innerHTML = 'Aceleraciï¿½n X: ' + acceleration.x + '<br />' +
+                            'Aceleraciï¿½n Y: ' + acceleration.y + '<br />' +
+                            'Aceleraciï¿½n Z: ' + acceleration.z + '<br />' + 
                             'Timestamp: '      + acceleration.timestamp + '<br />';
     }
 
-    // onError: Fallo al obtener la aceleración
+    // onError: Fallo al obtener la aceleraciï¿½n
     //
     function onError() {
         alert('onError!');
@@ -57,7 +57,7 @@
     </script>
   </head>
   <body>
-    <div id="accelerometer">Esperando al acelerómetro...</div>
+    <div id="accelerometer">Esperando al acelerï¿½metro...</div>
     <button onclick="stopWatch();">Detener el visor</button>
   </body>
 </html>
